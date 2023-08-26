@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+span {
+  color: #a5b4fc;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 75px;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+}
+header nav li {
+  list-style: none;
+}
+
+header nav {
+  display: flex;
+}
+header nav li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.nav_item {
+  margin-left: 30px;
+}
+header img:hover {
+  opacity: 0.5;
+}
+header nav li:hover {
+  text-decoration: underline;
+}
+
+/* media query pour un telephone */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  header img {
+    margin-bottom: 25px;
+  }
+  .nav_item {
+    flex: 1;
+    white-space: nowrap;
+  }
+}
+/* section titlte*/
+.title {
+  background-color: #1f2039;
+  padding: 80px;
+  font-size: 56px;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  color: #a5b4fc;
+}
+.portofolio h1 , .portofolio h2 {
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.portofolio h2{
+    margin-bottom: 65px;
+}
+.portofolio {
+  padding: 80px;
+}
+
+.portofolio_paysage {
+  display: flex;
+  min-height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.paysage_box {
+  background-size: cover;
+  background-position: center;
+  min-width: 350px;
+  height: 500px;
+  flex: 1;
+}
+.paysage1 {
+  background-image: url("./image/portofolio/paysage/paysage1.jpg");
+}
+.paysage2 {
+  background-image: url("./image/portofolio/paysage/paysage2.jpg");
+}
+.paysage3 {
+  background-image: url("./image/portofolio/paysage/paysage3.jpg");
+}
+.paysage4 {
+  background-image: url("./image/portofolio/paysage/paysage4.jpg");
+}
+.paysage5 {
+  background-image: url("./image/portofolio/paysage/paysage5.jpg");
+}
+.paysage6 {
+  background-image: url("./image/portofolio/paysage/paysage6.jpg");
+}
+.portofolio_portrait {
+  display: flex;
+  min-height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.portrait_box {
+  height: 500px;
+  min-width: 350px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.portrait1 {
+  background-image: url("./image/portofolio/portrait/portrait1.jpg");
+}
+.portrait2 {
+  background-image: url("./image/portofolio/portrait/portrait2.jpg");
+}
+.portrait3 {
+  background-image: url("./image/portofolio/portrait/portrait3.jpg");
+}
+.portrait4 {
+  background-image: url("./image/portofolio/portrait/portrait4.jpg");
+}
+.portrait5 {
+  background-image: url("./image/portofolio/portrait/portrait5.jpg");
+}
+.portrait6 {
+  background-image: url("./image/portofolio/portrait/portrait6.jpg");
+}
+@media(max-width:768px){
+    .portofolio h1 , .portofolio h2{
+       font-size: 24px;
+    }
+    .title p {
+        text-align: start;
+       margin-left: 15px;
+        font-size: 32px;
+        
+      }
+}
+
+/* footer-----------------------------------------------------------------*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 15px 50px;
+}
+footer nav{
+    display: flex;
+
+}
+footer nav li{
+    list-style: none;
+}
+.item_footer{
+    
+    padding: 15px;
+}

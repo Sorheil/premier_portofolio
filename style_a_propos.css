@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0px;
+    box-sizing:content-box;
+}
+span{
+    color: #a5b4fc;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 75px;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    
+}
+header nav li{
+    list-style: none;
+}
+header nav li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+header nav{
+    display: flex;
+    
+}
+.nav_item{
+    margin-left: 30px;
+}
+header img:hover{
+    opacity: 0.5;
+}
+header nav li:hover{
+    text-decoration: underline;
+}
+
+/* media query pour un telephone */
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        font-size: 16px;
+    }
+    header img{
+        margin-bottom: 25px;
+    }
+    .nav_item{
+       flex: 1;
+       white-space: nowrap;
+
+       
+    }
+
+    
+}
+/* section apropos*/
+.a_propos{
+    background-color: #1F2039;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 415px;
+    align-items: center;
+
+}
+.a_propos h1{
+    text-align: center;
+    font-family: Manrope, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #a5b4fc;
+    margin-bottom: 35px;
+    border-radius: 25px;
+}
+.a_propos p , .a_propos .ctv{
+    font-family: Manrope, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: aliceblue;
+    margin-bottom: 35px;   
+}
+.a_propos .ctv{
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 15px 35px;
+    background-color: #a5b4fc;
+}
+.a_propos .ctv:hover{
+    background-image: linear-gradient(to top  ,  #A7A7E3 , #787899);
+}
+.a_propos h2{
+    text-align: center;
+    font-family: Manrope, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: aliceblue;
+    margin-bottom: 35px;
+}
+.a_propos ul{
+    font-family: Manrope, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: aliceblue;
+    margin-bottom: 35px;
+}
+
+.contour_a_propos{
+    
+    border-right: 1px solid aliceblue;
+    border-bottom: 1px solid aliceblue;
+    margin-bottom: 35px;
+    
+}
+.item_a_propos{
+    flex: 1;
+}
+
+@media(max-width:768px){
+    .a_propos{
+        padding: 25px 25px;
+        
+    
+    }
+}
+/* section grille de prix*/
+.grille_prix{
+    background-color:#1F2039;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;padding: 30px 80px;
+}
+.grille_prix table   {
+    border-collapse:collapse;
+    font-family: Manrope, sans-serif;
+    
+   
+}
+
+.grille_prix table td  {
+    padding: 80px;
+    border:2px solid #a5b4fc;
+    color: aliceblue;
+    font-family: Manrope, sans-serif;
+
+   
+}
+.grille_prix table th {
+    border:2px solid #a5b4fc;
+    padding: 15px;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.grille_prix table caption{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Manrope, sans-serif;
+    margin-bottom: 80px;
+    color: aliceblue;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 15px 50px;
+}
+footer nav{
+    display: flex;
+
+}
+footer nav li{
+    list-style: none;
+}
+.item_footer{
+    
+    padding: 15px;
+}
+@media(max-width:768px){
+    .grille_prix{
+        display: none;
+    }
+}

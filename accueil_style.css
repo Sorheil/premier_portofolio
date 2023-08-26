@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0px;
+    box-sizing:content-box;
+}
+span{
+    color: #a5b4fc;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 75px;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    
+}
+header nav li{
+    list-style: none;
+}
+
+header nav li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+header nav{
+    display: flex;
+    
+}
+.nav_item{
+    margin-left: 30px;
+}
+header img:hover{
+    opacity: 0.5;
+}
+header nav li:hover{
+    text-decoration: underline;
+}
+
+/* media query pour un telephone */
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        font-size: 16px;
+    }
+    header img{
+        margin-bottom: 25px;
+    }
+    .nav_item{
+       flex: 1;
+       white-space: nowrap;
+
+       
+    }
+
+    
+}
+
+/* header terminer-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ .contain_presentation{
+    display: flex;
+    padding: 90px 260px;
+    justify-content: center;
+    background-color: #1F2039;
+
+}
+.presentation_item1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.title_presentation{
+    font-family: Montserrat, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #a5b4fc;
+}
+.cover_presentation{
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #f9f8ff;
+}
+.item{
+    margin-bottom: 15px;
+}
+.cta{
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #f9f8ff;
+    border-radius: 25px;
+    background-color: #A7A7E3;
+    padding: 15px 30px;
+    margin-top: 20px;
+    align-self:flex-start;
+    justify-self: center;
+}
+.cta:hover{
+    background-image: linear-gradient(to top  ,  #A7A7E3 , #787899);
+} 
+
+@media(max-width:768px){
+    .contain_presentation{
+        flex-direction: column-reverse;
+        padding: 20px 20px;
+    
+    }
+    
+    
+    .title_presentation{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+   
+    .cta{
+        align-self: center;
+    }
+    .cta:hover{
+        background-image: linear-gradient(to top  ,  #A7A7E3 , #787899);
+    }
+    .contain_presentation .presentation_item2 img{
+        width: 100%;
+        height: auto;
+    }
+}
+/*mes derniers projet--------------------------------------------------*/
+
+.contain_projet{
+    padding: 90px 260px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.bloc_projet1{
+    display: flex;
+    flex: 1;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.bloc_projet2{
+    display: flex;
+    flex: 1;
+    gap: 15px;
+}
+.contain_projet p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 65px;
+}
+@media(max-width:768px){
+    .contain_projet{
+            padding: 20px 20px;
+    }
+    .bloc_projet1{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-bottom: 15px;
+        gap: 15px;
+    }
+    .bloc_projet2{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 15px;
+    }
+}
+/*formulaire--------------------------------------------------*/
+ .contain_about_projet{
+    background-color: #1F2039;
+    padding: 90px 260px;
+}
+.contain_about_projet p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    padding: 65px 0px;
+    color: #a5b4fc;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+label{
+    display: block;
+    padding-bottom: 10px;
+    font-family: Manrope, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: aliceblue;
+}
+.bloc_form1{
+    display: flex;
+    margin-bottom: 15px;
+    
+}
+.bloc_form1-1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+input{
+    border-radius: 5px;
+    height: 40px;
+}
+.bloc_form3{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    flex: 1;
+    margin-bottom: 15px;
+}
+input[type="submit"]{
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #f9f8ff;
+    border-radius: 50px;
+    background-color: #A7A7E3;
+    padding: 10px 60px;
+    margin-top: 20px;
+    align-self: center;
+}
+input[type="submit"]:hover{
+    background-image: linear-gradient(to top ,  #A7A7E3 , #787899);
+} 
+
+@media(max-width:768px){
+    .contain_about_projet{
+        padding: 20px 20px;;
+    }
+    
+    
+        
+    
+    
+    .bloc_form1{
+        flex-direction: column;  
+    }
+    .bloc_form1-1{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    
+}
+
+/*footer------------------------------------------------------*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 15px 50px;
+}
+footer nav{
+    display: flex;
+
+}
+footer nav li{
+    list-style: none;
+}
+.item_footer{
+    
+    padding: 15px;
+}
